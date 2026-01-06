@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# drowsy-detector
-=======
 # Drowsy Detector
 
 A web-based application to detect drowsiness using real-time video and machine learning models.
@@ -32,5 +29,5 @@ A web-based application to detect drowsiness using real-time video and machine l
 
 ---
 
-**This project is under construction.**
->>>>>>> fe710b4 (Initial commit)
+**This project is under development.**
+
