@@ -7,7 +7,7 @@ A web-based application to detect drowsiness using real-time video and machine l
 - **Express.js** (web server)
 - **WebSocket** (real-time communication)
 - **HTML/CSS/JavaScript** (frontend)
-- **TensorFlow.js** (client-side ML model)
+- **Teachable Machine Image Library** (client-side ML, uses TensorFlow.js internally)
 
 ## How to Run
 
@@ -23,9 +23,15 @@ A web-based application to detect drowsiness using real-time video and machine l
    Go to `http://localhost:3000` (or the port specified in your server.js)
 
 ## Project Structure
-- `server.js` - Main server file
-- `public/` - Frontend files (HTML, JS, model, etc.)
-- `public/my_model/` - ML model files
+- `server.js` - Node.js/Express server
+- `public/` - Frontend static files
+   - `index.html` - Main web page
+   - `script.js` - Client-side logic
+   - `my_model/` - Teachable Machine model files (metadata.json, model.json, weights.bin)
+
+---
+## Drowsy Detection Model
+This project uses a custom model trained and tested with [Teachable Machine](https://teachablemachine.withgoogle.com/) for drowsy detection.
 
 ---
 
