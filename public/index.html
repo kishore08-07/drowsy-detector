@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drowsy Detector</title>
+</head>
+<body>
+    <h2>Drowsiness Detection</h2>
+    <button onclick="init()">Start Detection</button>
+    <div id="webcam-container"></div>
+    <div id="label-container"></div>
+    <audio id="alert-audio" src="alert.mp3" preload="auto"></audio>
+    <button id="stop-alert-btn" style="display:none;" onclick="stopAlert()">Stop Alert</button>
+    <div id="status"></div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
